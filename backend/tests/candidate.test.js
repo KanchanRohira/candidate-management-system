@@ -7,7 +7,6 @@ describe("Candidate Status Update Tests", () => {
 	let candidateId;
 
 	beforeAll(async () => {
-		// Register user
 		const userEmail = `status${Date.now()}@test.com`;
 		await request(app)
 			.post("/api/auth/register")
